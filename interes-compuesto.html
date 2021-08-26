@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Img/mate.ico">
+    <link rel="stylesheet" href="interes-Compuesto.css">
+    <title>Interes Compuesto</title>
+</head>
+<body>
+	<div class="contenedor">
+    	<div class="interes-Compuesto">
+        	<h1 
+        		class="tema1">Calculadora Del Interes Copuesto
+        	</h1>
+        		<form autocomplete="off" id="interes-Compuesto">
+            		<h6>
+                		<label class="inicial">Capital Inicial:</label>
+                		<input name="montoPrestamo" id="montoPrestamo" placeholder="RD$" required="">
+           			</h6>
+           				
+           			<h6 class="inicial2">
+                		<label for="tasaAnual">Tasa de Interés:</label>
+               			<input type="number"name="tasaAnual" id="tasaAnual" placeholder="%">
+           			</h6>
+            				
+            		<h6 class="inicial2">
+              		 	<label for="plazoPago">Plazo:</label>
+                		<input type="number" name="plazoPago" id="plazoPago" placeholder="Años">
+            		</h6>
+            		
+            		
+            		<div class="calculo">
+                        <button  id="resultado-simp" onclick="intereresSimple();"> Calcular Interes Simple </button>
+                    </div>
+
+            		<div class="limpiar">
+            			<button onclick="limpiar();">Limpiar Campos</button>
+            		</div>
+     	 		</form>
+    	</div>
+    <script type="text/javascript" src="Interes-compuesto.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js" integrity="sha512-XTa+nLKjbTCUazCWzwYpykjsTQDaepuKlg9YToCij7+Bdi9aHQhBQlV0rfnYmactJjHdusRQQV+6qWNNv0BScA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
